@@ -1,4 +1,24 @@
 $(document).ready(function() {
+
+    let time = 1800;
+    let intr;
+
+    function start_timer() {
+        intr = setInterval(tick, 1000);
+    }
+
+    function tick() {
+        time = time - 1;
+        let mins = Math.floor(time / 60);
+        let secs = time - mins * 60;
+        if (mins == 0 && secs == 0) {
+            clearInterval(intr);
+        }
+        mins = mins >= 10 ? mins : "0" + secs;
+        secs = secs >= 10 ? secs : "0" + secs;
+        document.getElementById("min").innerHTML = mins;
+        document.getElementById("sec").innerHTML = secs;
+    }
    
     // -------------spin-------------------
     var resultWrapper = $('.spin-result-wrapper, .pop-up-window');

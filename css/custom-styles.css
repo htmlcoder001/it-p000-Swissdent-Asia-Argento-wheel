@@ -167,6 +167,17 @@
   animation: 0.7s ease 0s normal none 1 running pop-up-appear;
 }
 
+.order_block {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 41px;
+  max-width: 360px;
+}
+
+.prod_img_wrapper {
+  position: relative;
+}
+
 .pop-up-window::before {
   content: "";
   position: absolute;
@@ -305,7 +316,51 @@
 
 .main-link:hover {
   background: #eb2626;
-}v
+}
+
+.js_old_price {
+  text-align: center;
+}
+
+.js_old_price {
+  text-decoration: line-through;
+}
+
+.order_block .priceс {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 30px;
+  width: 165px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.3;
+  transform: rotateZ(-7deg);
+  text-align: center !important;
+  margin: -25px auto 0px;
+  background: linear-gradient(to right, rgb(238, 165, 19) 0%, rgb(253, 237, 19) 100%);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-image: initial;
+  border-radius: 19%;
+  padding: 5px !important;
+}
+
+.prod_img_wrapper {
+  max-width: 300px;
+  margin: 15px auto;
+  position: relative;
+}
+
+.price_main {
+  border-bottom: 2px solid #d31812;
+  font-size: 24px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  line-height: 1;
+  margin: 0 auto;
+}
 
 @keyframes pop-up-appear {
   0% {
