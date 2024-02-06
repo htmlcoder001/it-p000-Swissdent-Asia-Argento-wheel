@@ -85,7 +85,6 @@
   display: none;
 }
 
-
 .timer {
   font-size: 18px;
   font-weight: normal;
@@ -204,40 +203,6 @@
   animation: 0.5s ease 0.6s normal backwards 1 running pop-up-appear-after;
 }
 
-@keyframes pop-up-appear {
-  0% {
-    transform: translateY(-2000px);
-  }
-  
-  30% {
-    transform: translateY(100px);
-  }
-  
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes pop-up-appear-before {
-  0% {
-    transform: scale(0);
-  }
-  
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes pop-up-appear-after {
-  0% {
-    opacity: 0;
-  }
-  
-  100% {
-    opacity: 1;
-  }
-}
-
 .pop-up-heading {
   display: inline-block;
   font-size: 37px;
@@ -285,6 +250,97 @@
   transition-timing-function: ease-in-out
 }
 
+.wheel_input {
+  position: relative;
+  display: block;
+  outline: 0;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: 100%;
+  height: 70px;
+  line-height: 68px;
+  margin: 0 auto 15px;
+  padding: 0 20px;
+  background:#fff;
+  text-align: center;
+  font-size: 18px;
+  font-family:"Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #222;
+  -webkit-transition: all 0.2s;
+  -moz-transition:    all 0.2s;
+  -o-transition:      all 0.2s;
+  -ms-transition:     all 0.2s;
+  transition:         all 0.2s;
+}
+
+.main-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-align: center;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  background: #de0606;
+  -webkit-transition: all 0.2s;
+  -moz-transition:    all 0.2s;
+  -o-transition:      all 0.2s;
+  -ms-transition:     all 0.2s;
+  transition:         all 0.2s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.main-link:hover {
+  background: #eb2626;
+}v
+
+@keyframes pop-up-appear {
+  0% {
+    transform: translateY(-2000px);
+  }
+  
+  30% {
+    transform: translateY(100px);
+  }
+  
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pop-up-appear-before {
+  0% {
+    transform: scale(0);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pop-up-appear-after {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes super-rotation {
   70% {
     -webkit-transform: rotate(1960deg);
@@ -309,6 +365,7 @@
   }
   
 }
+
 @media (max-width: 1280px) {
   .article__text {
     padding-left: 0px;
