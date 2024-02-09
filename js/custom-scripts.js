@@ -32,6 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
+        document.body.classList.remove('opened-menu');
+        document.body.classList.remove('ov-hidden');
+        document.querySelector('.site-header').classList.remove('active');
+
         const offset = scroll_offset,
           element = document.querySelector(this.getAttribute('href')),
           target = element.getBoundingClientRect().top + window.pageYOffset + offset;
